@@ -1,0 +1,609 @@
+<!doctype html>
+
+<html>
+
+   <head>
+     <title>Russell Wilson, Cringe Lord</title> 
+       <meta charset="utf-8"> 
+       <meta name="viewport" content="width=device-width, initial-scale=1"> 
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+       
+       <style>
+            /* IA9 NAV */
+           
+           .logo{
+               height:40px;
+               width:80px;
+               margin-bottom:10px;
+               position: absolute;
+               top:10px;
+           }
+           
+           .navbar{
+               background-color:chartreuse;
+               font-size:16px;
+                
+           }
+           
+           .navbar li a{
+               color:darkblue!important;
+               padding-left:20px;
+               padding-right:20px;
+           }
+           
+           .navbar li a:hover{
+               color:chartreuse!important;
+               background-color:darkblue!important;
+               transition: .5s;
+           }
+           
+           .navbar-default .navbar-toggle{
+               border-color:transparent;
+           }
+           
+           /* IA2 Header */
+           
+           .jumbotron {
+               background-color:lightgray;
+               color:darkblue;
+               height:250px;
+               margin-bottom: 0;
+           }
+       
+           .jumbotron h1{
+               font-size:90px;
+           }
+           
+           .jumbotron p{
+               font-size:20px;
+               color:darkblue;
+           }
+    
+           /* IA3 About */
+           
+           .bg-yellow{
+            background-color:white;
+        }
+        .bg-blue{
+            background-color:chartreuse;
+        }
+        
+        .icon{
+            font-size:150px;
+            color:darkblue;
+        }
+        .container-about{
+            padding:50px;
+        }
+        
+        .container-about h2{
+            color:darkblue;
+        }
+        
+        @media screen and (max-width:768px){
+            .col-sm-4{
+                text-align:center;
+            }
+        }
+             
+           /* IA4 Team */
+           
+           .container-breakdown img{
+            width:250px;
+            height:250px;
+            border-radius: 50%;
+            border: 8px solid darkblue;
+            margin:20px;
+        }
+        .container-breakdown img:hover{
+            filter:brightness(135%);
+                transition: 1s;
+        }
+        
+        .container-breakdown {
+            background-color:lightgray;
+        }
+    
+        
+        .container-breakdown h2{
+            font-size:50px;
+            color:darkblue;
+        }
+        
+        .container-breakdown p{
+            font-size:20px;
+                color:black;
+        }
+           
+           /* IA5 Carousel */
+           
+           .carousel .item img{
+               
+               height: 500px;
+               width:100%;
+               margin:auto;
+                }
+       
+           .carousel-caption h3{
+               color:darkblue;
+               font-size:30px;
+               
+           }
+           
+           .carousel-caption p{
+               color:white;
+               font-size:20px;
+           }
+           
+           @media (max-width: 600px){
+               .carousel-caption{
+                   display:none;
+               }
+               
+               .carousel .item img{
+                   height:150px;
+                   width:100%;
+               }
+               
+               
+           }
+           
+           /* IA8 Toggle */
+           
+           .container-toggle {
+               padding: 80px 120px;
+               
+           }
+           .container-toggle h2{
+               font-size:35px;
+               color:darkblue;
+           }
+           
+           .nav-tabs{
+               border-color:chartreuse;
+           }
+           .nav-tabs li a{
+               color:darkblue;
+               font-size:20px;
+           }
+           
+           .tab-pane p{
+               font-size:20px;
+           }
+           
+           /* IA7 Modal */
+           
+           .container-modal img{
+               width:500px;
+               height:500;
+               padding:20px;
+           }
+       
+           .container-modal{
+               padding:30px;
+               background-color:blue;
+           }
+           
+           .btn{
+               
+               background-color:black;
+               color:white;
+               transition: 0.7s;
+           }
+           
+           .btn:hover{
+               
+               background-color:chartreuse;
+               color:black;
+           }
+           
+           .modal-header, h5{
+               
+               background-color:darkblue;
+               color:white;
+               text-align: center;
+               font-size:30px;
+               padding:30px;
+           }
+           
+           /* IA6 Contact */
+           
+           .container-contact{
+               padding: 20px 120px;
+               color: darkblue;
+               background-color:lightgray;
+               width:100%; 
+        
+           } 
+            
+           .container-contact h3{
+               font-size:30px;
+               text-align:center;
+           }
+           
+           .btn{
+               margin:10px 20px;
+               background-color:darkblue;
+               color:white;
+               border-radius: 10%;
+               transition:1s;
+           }
+           .btn:hover{
+               background-color:chartreuse;
+               color:black;
+           }
+           
+           /* IA10 Footer */
+           
+           footer .glyphicon {
+               
+               font-size: 26px;
+               color: darkblue;
+               padding: 20px;
+           }
+       
+           footer p{
+               font-size:18px;
+               color: darkblue;
+               padding-bottom: 20px;
+           }
+           
+           footer{
+               background-color:chartreuse;
+           }
+       
+       </style>
+       
+    </head> 
+    
+    
+    <body>
+        
+        <!--IA9 NAV-->
+        
+        <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"> </span>
+          <span class="icon-bar"> </span>
+          <span class="icon-bar"> </span>
+          
+      </button>
+      
+        <a class="navbar-brand" href="a"><img src="images/sealogo.png" class="logo"></a>
+          
+        
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">ABOUT</a> </li>
+            <li><a href="#breakdown">BREAKDOWN</a> </li>
+            <li><a href="#more">MORE</a> </li>
+            <li><a href="#wager">WAGER</a> </li>
+            <li><a href="#contact">CONTACT</a> </li>
+        
+        
+        </ul>
+     
+    </div>
+  </div>
+</nav>
+        
+        <!--IA2 Header-->
+        
+        <div class="jumbotron text-center">
+            <h1>Russell Wilson, CringeLord</h1>
+            <p>Bringing cringe to a whole new level</p>
+        
+        </div> 
+        
+        <!--IA3 About-->
+        
+        <div class="container-fluid container-about bg-yellow" id="about">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h2>The Journey</h2>   
+                    <h4>From King to Cringe:</h4>
+                    <p> We all once knew Russell Wilson as the quarterback of our dreams. The one who was going to bring us championships for years to come. Then things began to unravel. The downfall may have begun when Ashton Meem, Russell Wilson's ex-wife slept with his teammate and wide receiver Golden Tate. Then came the goal-line interception when we were inches away from back to back SuperBowls. When we all first began questioning this man's morals was when  Russell Wilson posted the infamous "Mr. Unlimited" video. So fucking cringe. My god. Then came the voice change and teammates playing Future songs at practice to poke fun at Russell and his new wifey, Ciara. Not to mention all the interviews where this man seems like a damn robot. Slowly we all started to realize this man is a simp. 
+                    
+                    But luckily, we still have Pete and John. There was a moment in time where I may have chosen Russ over Pete and John. Oh my how wrong I was. Thanks to one of the greatest trades ever pulled off, with draft picks we still need to turn into on-the-field assets, we look better than we have in a couple of years and we are leading our division when many thought we would be the worst team in the league. I wanted to create this website as a platform for all to come use so we could bask in the glory of exiting from Russell Wilson's grasp. We no longer have to fake that we stand by this man's every move.  
+
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <span class="glyphicon  glyphicon-eye-open icon"></span>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid container-about bg-blue">
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-menu-hamburger icon"></span>
+                </div>
+                <div class="col-sm-8">
+                    <h2>Basic Functions :</h2>
+                    <ul>
+                    
+                    <li>WiFi connectivity to allow the water bottle to sync with the user’s phone application</li>
+                    <li>The application is where all the data and tracking will take place including how much water the user is drinking, how much friends and family are drinking and when it is time to clean the water bottle. </li>
+                    <li>Basic water bottle design that includes a lid and the option for a straw</li>
+                        </ul>
+
+                </div>
+            </div>
+        </div>
+        
+        <!--IA4 Team-->
+        
+        <div class="container-fluid container-breakdown text-center" id="breakdown">
+        <h2>Breakdown</h2>
+            <p>Here we can see the stages of evolution that Russell went through on his way to becoming the biggest cringe in sports</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>The Beloved Young Gun</h3>
+                <img src="images/Russell_Wilson_smiling_photo_t580.jpeg">
+                     </div>
+             <div class="col-sm-4">
+               <h3>Seattle's Golden Child turned Diva</h3> 
+                 <img src="Images/russdiva.webp">
+            </div>
+             <div class="col-sm-4">
+                <h3>Cringe Lord</h3>
+                 <img src="Images/russcare.jpeg">
+        
+    
+    
+    </div>
+        
+        <!--IA5 Carousel-->
+            
+            <div class="carousel slide" id="myCarousel" data-ride="carousel">
+        
+        <!-- Images for slides -->
+           
+    <div class="carousel-inner" role="listbox" id="more">
+      <div class="item active">
+        <img src="images/unlimited.png" >
+        <div class="carousel-caption">
+          <h3>"Mr. Unlimiiiiited"</h3>
+          <p>Is this guy serious?</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="images/letsride.webp">  
+        <div class="carousel-caption">
+          <h3>"Broncos Country!"</h3>
+          <p>Lets give the hawks a top ten pick!</p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="images/subwayruss.webp">
+        <div class="carousel-caption">
+          <h3>DangeRuss!</h3>
+          <p>DangerRussly Cringe. Really Subway?</p>
+        </div>      
+      </div>
+    </div>
+
+        <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+           <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+        
+        
+        </div>
+        
+        <!--IA8 Toggle-->
+            
+            <div class="container-fluid container-toggle text-center">
+            <div class="toggable_tabs">
+            <h2>What the Media Thinks</h2>
+                <ul class="nav nav-tabs">
+                    <li class="active"> <a data-toggle ="tab" href="#menu1">Kobe</a></li>
+                    <li> <a data-toggle ="tab" href="#menu2">Michael</a></li>
+                    <li> <a data-toggle ="tab" href="#menu3">Luka</a></li>
+        
+                </ul>
+                <div class="tab-content">
+                <div id="menu1" class="tab-pane fade in active">
+                    <h3>Kobe Bryant, Entrepreneur</h3>
+                    <p>Best product I have ever purchased!</p>
+                    </div>
+                 <div id="menu2" class="tab-pane fade">
+                    <h3>Michael Jordan, Owner of Jordan Brand</h3>
+                    <p>Love this product so much that I bought one for all my employees!</p>
+                    </div>
+                 <div id="menu3" class="tab-pane fade">
+                    <h3>Luka Doncic, Pro-Athlete</h3>
+                    <p>Revolutionary product!</p>
+                    </div>
+                
+                
+                
+                
+                </div>
+            
+            
+            </div>
+        
+        
+        
+        
+        
+        
+        </div>
+        
+        <!--IA7 Modal-->
+            
+            <div class="container-fluid container-modal text-center" id="wager">
+            <div class="col-sm-12">
+            <img src="Images/pandj.jpeg">
+                <h3>Russ is Cringe</h3>
+                <p>Now let your money Ride on Pete & John!</p>
+                <button class="btn" data-toggle="modal" data-target="#myModal">Place Your Bets</button>
+            </div>
+             </div>
+
+        
+    <!--Modal-->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+            
+            
+            <!--Modal Content-->
+                <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h5>Go Hawks</h5>
+          <h5>Place Your Bets</h5>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Seahawks to Win SuperBowl 2023, -110 </label>
+              <input type="number" class="form-control" id="psw" placeholder="Wager">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Your Email</label>
+              <input type="email" class="form-control" id="username" placeholder="Enter email">
+            </div>
+              <button type="submit" class="btn btn-block">Pay
+                <span class="glyphicon glyphicon-ok-sign"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-right" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+         
+        </div>
+      </div>
+            
+            
+            </div>
+        
+        </div>
+        
+        <!--IA6 Contact-->
+            
+            <div class="container container-contact" id="contact">
+            <h3> Contact Us</h3>
+            <p class="text-center"> Any Questions </p>
+            
+        
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Contact Creator</p>
+                    <p><span class="glyphicon glyphicon-map-marker"></span>California, US</p>
+                    <p><span class="glyphicon glyphicon-phone"></span>Phone: 360-555-1234</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span>Email:gohawks@russiscringe.com</p>
+                    
+                
+                
+                </div>
+                
+                <div class="col-md-8">
+                    <div clas="row">    
+                    <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>    
+                    </div>
+                    
+                    
+                </div>
+                    
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" row="5">
+                    </textarea>
+                    
+                    <div class="row">
+                    <div class="col-md-12 form-group">
+                    <button class="btn pull-right" type="submit"> Submit </button>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+            
+            
+            
+            </div>
+        
+        
+        
+        
+        
+        </div>
+        
+        <!--IA10 Footer-->
+            
+            <footer class="container-fluid container-footer text-center">
+            <a href="#" title="Top">
+            
+                <span class="glyphicon glyphicon-chevron-up">
+                
+                </span>
+            </a>
+        <p> Copyright &copy; 2022 Russ is Cringe. All Rights Reserved</p>
+        
+        </footer>
+        
+        
+        <script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+ 
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#header']").on('click', function(event) {
+ 
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+ 
+      // Prevent default anchor click behavior
+      event.preventDefault();
+ 
+      // Store hash
+      var hash = this.hash;
+ 
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+  
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+    
+    
+            </body>
+    
+    
+    
+</html>
